@@ -1,0 +1,144 @@
+
+<HTML>
+<HEAD><TITLE>Tablas</TITLE>
+</HEAD>
+
+<BODY>
+
+<center>
+<h3>
+[<a href="indice.htm">Indice</a>]
+</h3>
+</center>
+<hr>
+<H2>Tablas</H2>
+
+Las tablas son sin duda uno de los elementos m&aacute;s potentes del HTML. Con pocos elementos se pueden conseguir efectos espectaculares. En el interior de las celdas de una tabla, que pueden ser con borde visible o invisible, se puede poner cualquier cosa: texto de cualquier tama&ntilde;o y color, im&aacute;genes, links... Por supuesto, adem&aacute;s de permitir cualquier contenido, tienen sus propios atributos de alineaci&oacute;n tanto horizontal como vertical, y atributos de dimensionado. Por defecto se autodimensionan, es decir, se adaptan en tama&ntilde;o a su contenido, pero tambi&eacute;n es posible definirlo de forma fija. Las tablas han sido utilizadas largo tiempo para maquetar el contenido  de las p&aacute;ginas, y aunque las nuevas tendencias aconsejen hacer esto con bloques (capas XHTML), no es un elemento que vaya a desaparecer, y es mucho m&aacute;s sencillo de utilizar. 
+<P>
+El elemento b&aacute;sico de definici&oacute;n de tabla es &lt;<b>TABLE</b>&gt;  &lt;<b>/TABLE</b>&gt; y en su interior se disponen los sub elementos &lt;<b>TR</b>&gt; para definir una fila (<b>R</b>ow) &lt;<b>TH</b>&gt; para definir una cabecera (<b>H</b>eader) &lt;<b>TD</b>&gt; para definir una celda de datos (<b>D</b>ata). Estos sub elementos tambi&eacute;n han de llevar sus correspondientes cierres: &lt;<b>/TR</b>&gt; &lt;<b>/TH</b>&gt; &lt;<b>/TD</b>&gt;.
+<P>
+Una cabecera &lt;<b>TH</b>&gt; es lo mismo que una celda de datos &lt;<b>TD</b>&gt; pero de forma automática el texto de su contenido recibe los atributos de negrita y centrado. S&oacute;lo es posible definirlas al principio de las filas, de las columnas o de ambas a la vez.
+<p>
+He aqu&iacute; una tabla-resumen de los elementos utilizados y los atributos que admite cada uno:
+<P>
+<CENTER>
+<TABLE BORDER>
+<CAPTION ALIGN=bottom>Resumen de tablas</CAPTION>        
+<TR>
+<TD><TH>TABLE</TH><TH>TR</TH><TH>TD</TH><TH>TH</TH><TH>CAPTION</TH></TD>
+</TR>
+
+<TR ALIGN=CENTER>    
+<TH>BORDER</TH><TD>X</TD><TD>-</TD><TD>-</TD><TD>-</TD><TD>-</TD>
+</TR>
+
+<TR ALIGN=CENTER>    
+<TH>BORDERCOLOR</TH><TD>X</TD><TD>-</TD><TD>-</TD><TD>-</TD><TD>-</TD>
+</TR>
+
+<TR ALIGN=CENTER>    
+<TH>ROWSPAN</TH><TD>-</TD><TD>-</TD><TD>X</TD><TD>X</TD><TD>-</TD>
+</TR>
+
+<TR ALIGN=CENTER>    
+<TH>COLSPAN</TH><TD>-</TD><TD>-</TD><TD>X</TD><TD>X</TD><TD>-</TD>
+</TR>
+
+<TR ALIGN=CENTER>    
+<TH>ALIGN</TH><TD>-</TD><TD>X</TD><TD>X</TD><TD>X</TD><TD>X</TD>
+</TR>
+
+<TR ALIGN=CENTER>    
+<TH>VALIGN</TH><TD>-</TD><TD>-</TD><TD>X</TD><TD>-</TD><TD>-</TD>
+</TR>
+
+<TR ALIGN=CENTER>    
+<TH>WIDTH</TH><TD>X</TD><TD>-</TD><TD>X</TD><TD>-</TD><TD>-</TD>
+</TR>
+
+<TR ALIGN=CENTER>    
+<TH>HEIGTH</TH><TD>X</TD><TD>-</TD><TD>X</TD><TD>-</TD><TD>-</TD>
+</TR>
+
+<TR ALIGN=CENTER>    
+<TH>CELLPADDING</TH><TD>X</TD><TD>-</TD><TD>-</TD><TD>-</TD><TD>-</TD>
+</TR>
+
+<TR ALIGN=CENTER>    
+<TH>CELLSPACING</TH><TD>X</TD><TD>-</TD><TD>-</TD><TD>-</TD><TD>-</TD>
+</TR>
+
+<TR ALIGN=CENTER>    
+<TH>NOWRAP</TH><TD>-</TD><TD>-</TD><TD>X</TD><TD>-</TD><TD>-</TD>
+</TR>
+
+<TR ALIGN=CENTER>    
+<TH>EVENTS</TH><TD>X</TD><TD>X</TD><TD>X</TD><TD>X</TD><TD>-</TD>
+</TR>
+
+</TABLE>
+</CENTER>
+<p>
+Veamos el significado de cada atributo:
+
+<ul>
+    <li><b><font color="blue">BORDER</font></B>&nbsp;&nbsp;&nbsp; Indica el ancho de los bordes de la tabla. Se mide en p&iacute;xels. Si no se escribe este atributo, es equivalente a BORDER=0 (por defecto).
+
+<li><b><font color="blue">BORDERCOLOR</font></B>&nbsp;&nbsp;&nbsp; Establece el color de los bordes de la tabla. No funciona igual en todos los navegadores.
+
+    <li><b><font color="blue">CELLSPACING</font></B>&nbsp;&nbsp;&nbsp; Indica el n&uacute;mero de p&iacute;xels que separan una celda de otra. Aunque pueda parecerlo, no hace lo mismo que BORDER. Su valor por defecto es 2.
+
+    <li><b><font color="blue">CELLPADDING</font></B>&nbsp;&nbsp;Indica los p&iacute;xels de separaci&oacute;n entre el borde de la celda y su contenido. Su valor por defecto es 1.
+
+    <li><b><font color="blue">WIDTH</font></B>&nbsp;&nbsp;&nbsp; Seg&uacute;n donde se escriba, sirve para controlar el ancho de toda la tabla o de sus columnas. Si se incluye en &lt;TABLE&gt; puede indicar el tama&ntilde;o tanto en p&iacute;xels como en porcentaje respecto al ancho de la pantalla.
+
+    <li><b><font color="blue">ALIGN</font></B>&nbsp;&nbsp;&nbsp; Indica la alineaci&oacute;n horizontal de los datos dentro de las celdas. Puede tener tres valores: <b>LEFT</B> (izquierda), <b>RIGHT</B> (derecha) y <b>CENTER</B> (centro).
+
+    <li><b><font color="blue">VALIGN</font></B>&nbsp;&nbsp;&nbsp; Indica la alineaci&oacute;n vertical de los datos dentro de las celdas. Puede tener tres valores: <b>TOP</B> (arriba), <b>BOTTOM</B> (abajo) y <b>MIDDLE</B> (centro).
+
+    <li><b><font color="blue">ROWSPAN</font></B>&nbsp;&nbsp;&nbsp; Se utiliza en la definici&oacute;n de una celda (&lt;TD&gt;) o cabecera (&lt;TH&gt;) para indicar que su anchura o altura son equivalentes a un determinado n&uacute;mero de filas.
+
+    <li><b><font color="blue">COLSPAN</font></B>&nbsp;&nbsp;&nbsp; Se utiliza en la definici&oacute;n de una celda (&lt;TD&gt;) o cabecera (&lt;TH&gt;) para indicar que su anchura o altura son equivalentes a un determinado n&uacute;mero de columnas.
+
+    <li><b><font color="blue">NOWRAP</font></B>&nbsp;&nbsp;&nbsp; Para impedir que las l&iacute;neas de texto dentro de una celda se trunquen en los espacios en blanco. 
+
+<li><b><font color="blue">EVENTS</font></B>&nbsp;&nbsp;&nbsp; Se pueden capturar todos los eventos t&iacute;picos de los navegadores en cualquiera de las partes de una tabla. Para ello es necesario JavaScript, y no es compatible con todos los navegadores.<br>
+    Por ejemplo:<font face="courier"> &lt;TABLE BORDER <B>onMouseOver</B>="javascript:alert('Aviso')"&gt; ...  &LT;/TABLE&GT;</font> 
+
+</ul>
+<p>
+Recientemente se han implementado al elemento &lt;TABLE&gt; algunos atributos muy interesantes que permiten definir qu&eacute; bordes o l&iacute;neas de la tabla se mostrar&aacute;n:
+<p>
+Este atributo sirve para definir qu&eacute; bordes del marco de la tabla ser&aacute;n visibles:  <b>&lt;TABLE <font color="blue">FRAME="valor"</font>&GT; ... &LT;/TABLE&GT;</B> donde <b>valor</b> puede ser:
+<UL>
+    <LI><b>void</b> - Ning&uacute;n lado (por defecto).
+    <li><b>above</b> - S&oacute;lo el borde superior
+    <li><b>below</b> - S&oacute;lo el borde inferior.
+    <li><b>hsides</b> - S&oacute;lo los bordes superior e inferior.
+    <li><b>vsides</b> - S&oacute;lo los lados derecho e izquierdo.
+    <li><b>lhs</b> - S&oacute;lo el lado izquierdo.
+    <li><b>rhs</b> - S&oacute;lo el lado derecho.
+    <li><b>box</b> - Los cuatro lados.
+    <li><b>border</b> - Los cuatro lados (no es lo mismo que el ya conocido)
+</UL>
+
+Y este otro sirve para definir qu&eacute; bordes de la tabla ser&aacute;n visibles:  <b>&lt;TABLE <font color="blue">RULES="valor"</font>&GT; ... &LT;/TABLE&GT;</B> donde <b>valor</b> puede ser:
+<UL>
+    <LI><b>none</B> - Ninguna l&iacute;nea de divisi&oacute;n (por defecto).
+    <li><b>groups</b> - S&oacute;lo aparecen l&iacute;neas de divisi&oacute;n entre grupos de filas y grupos de columnas.
+    <li><b>cols</b> - S&oacute;lo aparecer&aacute;n l&iacute;neas de divisi&oacute;n entre filas.
+    <li><b>rows</b> - S&oacute;lo aparece l&iacute;neas de divisi&oacute;n entre columnas.
+</ul>
+
+ Estos &uacute;ltimos atributos no funcionan igual en todos los navegadores, y no funcionan en absoluto si no son de la &uacute;ltima generaci&oacute;n. Seg&uacute;n el navegador de que se trate, puede que haya que combinar m&aacute;s de un atributo para conseguir el efecto deseado. Lo mejor es hacer pruebas con algunas versiones para asegurarse.
+
+<P>
+Las posibilidades son tan amplias, que lo mejor es ver la <a href="tablaeje.htm">p&aacute;gina de ejemplos de tablas</a> que encontrar&aacute;s en el &iacute;ndice.
+<hr>
+<center>
+<h3>
+[<a href="indice.htm">Indice</a>]
+</h3>
+</center>
+</body/
+</html>

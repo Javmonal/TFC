@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<toc version="1.0"> <!--  categoryclosedimage="FolderClosed" categoryopenimage="FolderOpened"  
+topicimage="ItemIco"-->
+        <tocitem text="Gestión de stock"    target="introduccion">
+           <tocitem text="1-Introducción"    target="introduccion"/>
+	   <tocitem text="2-Estructura"    target="estructura"/>
+         
+	<tocitem text="4-Cuerpo"    target="cuerpo">
+           <tocitem text="4.1-Añadir"    target="nuevoproducto"/>
+           <tocitem text="4.2-Gestion"    target="gestionstock"/>
+	   <tocitem text="4.3-Ver"    target="verproductos"/>
+	 
+        </tocitem>
+        </tocitem>
+
+ 	
+</toc>

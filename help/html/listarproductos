@@ -1,0 +1,32 @@
+<HTML>
+<HEAD><TITLE>Tamanos y tipos de letra</TITLE>
+</HEAD>
+
+<BODY>
+
+<center>
+<h3>
+[<a href="indice.htm">Indice</a>]
+</h3>
+</center>
+<hr>
+<H2>Ver productos</H2>
+
+Para generar un informe con todos los productos que posee la base de datos con la que se trabaja.
+<P>
+    
+<H2>Pasos a seguir</H2>
+
+Pulsar el botón "Ver productos", con lo que se abrirá una ventana la cual nos mostrará un infomrme de los productos disponibles en la base de datos. Se podrá guardar en difrerentes formatos gracias al primer icono en el menú superior de dicha ventana.
+    
+<P>
+<center>
+<h3>
+[<a href="indice.htm">Indice</a>]
+
+</h3>
+</center>
+<hr>
+
+</BODY>
+</HTML>

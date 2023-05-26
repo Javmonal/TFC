@@ -1,0 +1,90 @@
+
+<HTML>
+<HEAD><TITLE>Otros efectos</TITLE>
+</HEAD>
+
+<BODY>
+
+<center>
+<h3>
+[<a href="indice.htm">Indice</a>]
+</h3>
+</center>
+<hr>
+<H2>Otros efectos en el texto</H2>
+Una o varias l&iacute;neas de texto, pueden estar centradas respecto a los m&aacute;rgenes de la ventana. Esto afecta s&oacute;lo al texto que hay entre <b>&lt;CENTER&gt;</b> y <b>&lt;/CENTER&gt;</B>, pero no a todo el p&aacute;rrafo. Por ejemplo:
+<pre>
+texto texto texto texto texto texto texto texto texto texto texto texto 
+<b>&lt;CENTER&gt;</b>texto centrado texto centrado&lt;/CENTER&gt;
+texto texto texto texto texto texto texto texto texto texto texto texto 
+</PRE>
+Se ver&aacute;: 
+<P>
+texto texto texto texto texto texto texto texto texto txto texto texto texto texto texto texto texto
+<CENTER>texto centrado texto centrado</CENTER>
+texto texto texto texto texto texto texto texto texto txto texto texto texto texto texto texto texto
+<p>
+Esto, adem&aacute;s de a texto s&oacute;lo, se puede aplicar a una tabla, una imagen o cualquier otra cosa.
+<P>
+Quedan algunos otros elementos que modifican el aspecto del texto. Algunos, aparentemente,  hacen la misma cosa, y otros no funcionan con el visualizador de Netscape, por lo que se omiten aqu&iacute;.
+<dl>
+   <dt> <b>Texto en negrita:</b>
+       <dd><pre>&lt;B&gt;Texto en negrita&lt;/B&gt;</pre>
+   <dt><strong>Texto realzado:</strong>
+       <dd><pre>&lt;STRONG>Texto realzado&lt;/STRONG&gt;</pre>
+   <dt><I>Texto en it&aacute;lica:</I> 
+       <dd><pre>&lt;I&gt;Texto en it&aacute;lica&lt;/I&gt;</pre>
+   <dt><em>Texto con &eacute;nfasis:</em>
+       <dd><pre>&lt;EM&gt;Texto con &eacute;nfasis&lt;/EM&gt;</pre>
+   <dt><code>Texto ejemplo de c&oacute;digo:</code>
+       <dd><pre>&lt;CODE&gt;Texto ejemplo de c&oacute;digo&lt;/CODE&gt;</pre>
+   <dt><TT>Texto teletipo:</TT>
+       <dd><pre>&lt;TT&gt;Texto teletipo&lt;/TT&gt;</pre>
+   <dt><u>Texto subrayado:</u>
+       <dd><pre>&lt;U&gt;Texto subrayado&lt;/U&gt;</pre>
+   <dt><STRIKE>Texto tachado:</STRIKE>
+       <dd><pre>&lt;STRIKE&gt;Texto tachado&lt;/STRIKE&gt;</pre>
+   <dt><ADDRESS>Texto de direcci&oacute;n:</ADDRESS>
+       <dd><pre>&lt;ADDRESS>Texto de direcci&oacute;n&lt;/ADDRESS&gt;</pre>
+   <dt><BLINK>Texto intermitente</BLINK>
+       <dd><pre>&lt;BLINK&GT;Texto intermitente&lt;/BLINK&gt;</pre>
+   <dt><SUP>Texto super&iacute;ndice</SUP>Texto normal
+       <dd><pre>&lt;SUP&GT;Texto Super&iacute;ndice&lt;/SUP&gt;</pre>
+
+   <dt><SUB>Texto sub&iacute;ndice</SUB>Texto nomal
+       <dd><pre>&lt;SUB&GT;Texto Sub&iacute;ndice&lt;/SUB&gt;</pre>
+
+   <dt><big>Texto grande</big>
+       <dd><pre>&lt;BIG&GT;Texto grande&lt;/BIG&gt;</pre>
+
+   <dt><SMALL>Texto peque&ntilde;o</SMALL>
+       <dd><pre>&lt;SMALL&GT;Texto peque&ntilde;o&lt;/SMALL&gt;</pre>
+
+</dl>
+
+En los navegadores de &uacute;ltima generaci&oacute;n se ha implementado un efecto que permite incluir explicaciones ocultas que aparecen al pasar el rat&oacute;n por encima (sin pulsar), pero sin cambiar de p&aacute;gina ni abrir ninguna ventana nueva. Por ejemplo, si escribes:
+<p>
+&lt;ACRONYM TITLE="Hyper Text Markup Language"&gt;HTML&lt;/ACRONYM&gt;
+<p>
+Al pasar el rat&oacute;n sobre la palabra HTML, se desvela su significado:
+<ACRONYM TITLE="Hyper Text Markup Language">HTML</ACRONYM>
+<p>
+De funcionamiento similar al anterior tambi&eacute;n tenemos el elemento <b>&lt;abbr></b>
+<p>
+&lt;abbr TITLE="Hyper Text Markup Language"&gt;HTML&lt;/abbr&gt;
+<p>
+Y este es el aspecto que toma el texto: <abbr TITLE="Hyper Text Markup Language">HTML</abbr> &nbsp; &nbsp; 
+Este &uacute;ltimo elemento <b>NO</b> funciona con el navegador IE. Como puedes ver, los dos trabajan de la misma forma que el par&aacute;metro <b>title</b> que se aplica al elemento
+<A HREF="link1.htm#punto2">&lt;A></A>  y se diferencian de &eacute;ste solamente por el tipo de subrayado, que es m&aacute;s ligero.
+
+<hr>
+<center>
+<h3>
+[<a href="indice.htm">Indice</a>]
+</h3>
+</center>
+<hr>
+
+</BODY>
+</HTML>
+
