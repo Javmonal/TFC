@@ -1,0 +1,140 @@
+<HTML>
+<HEAD><TITLE>Tamanos y tipos de letra</TITLE>
+</HEAD>
+
+<BODY>
+
+<center>
+<h3>
+[<a href="indice.htm">Indice</a>]
+</h3>
+</center>
+<hr>
+<H2>Tama&ntilde;os y tipos de letra en HTML</H2>
+
+Para definir distintos tama&ntilde;os de letra, en HTML se utiliza el elemento lleno <B>&lt;Hx&gt;</B> &lt;/Hx&gt; donde x es un n&uacute;mero que puede variar entre 1 y 6, siendo 1 el tama&ntilde;o mayor.
+<P>
+Se escribir&aacute;n as&iacute;:
+
+<pre>
+<B>&lt;H1&gt;</B> Texto de prueba (H1)&lt;/H1&gt;.
+&lt;H2&gt; Texto de prueba (H2)&lt;/H2&gt;
+&lt;H3&gt; Texto de prueba (H3)&lt;/H3&gt;
+&lt;H4&gt; Texto de prueba (H4)&lt;/H4&gt;
+&lt;H5&gt; Texto de prueba (H5)&lt;/H5&gt;
+&lt;H6&gt; Texto de prueba (H6)&lt;/H6&gt;
+</pre>
+
+y este ser&iacute;a el resultado:
+<h1>Texto de prueba (H1)</h1>
+<h2>Texto de prueba (H2)</h2>
+<h3>Texto de prueba (H3)</h3>
+<h4>Texto de prueba (H4)</h4>
+<h5>Texto de prueba (H5)</h5>
+<h6>Texto de prueba (H6)</h6>
+
+No hay que olvidar poner el cierre &lt;/Hx&gt; a cada elemento utilizado.<BR>
+ Este tipo de elemento se suele utilizar para escribir encabezamientos, ya que despu&eacute;s del cierre autom&aacute;ticamente el visualizador inserta un salto de p&aacute;rrafo.
+<P>
+Por ejemplo: si escribes 
+<pre>
+&lt;H1&gt; Texto en H1 &lt;/H1&gt; &lt;H3&gt; Texto en H3 &lt;/H3&gt;
+</pre>
+se ver&aacute:
+<h1>Texto en H1</h1> <h3>Texto en H3</h3>
+Y no una cosa al lado de la otra, como cabr&iacute;a esperar. Este elemento admite un par&aacute;metro de alineaci&oacute;n. As&iacute;, si escribes:
+
+<pre>
+&lt;H3 align=center&gt; Texto en H3 &lt;/H3&gt;
+</pre>
+
+<h3 align=center> Texto en H3</h3>
+
+<hr>
+
+Otra forma de cambiar los tama&ntilde;os de letra es utilizar el elemento <B>&lt;FONT </B>&gt; con el atributo <b> VALOR</B>, que es un  n&uacute;mero entre 1 y 7. El valor por defecto del texto es 3. La gran diferencia de esta notaci&oacute;n respecto a la anterior es que no se produce un salto de p&aacute;rrafo despu&eacute;s de cada cambio, por lo que pueden hacerse cosas como esta:
+
+<pre>
+<B>&lt;FONT SIZE</B>=3&gt;A&lt;/font&gt;&lt;FONT SIZE=4&gt;A&lt;/font&gt;&lt;FONT SIZE=5&gt;A&lt;/font&gt;
+
+&lt;FONT SIZE=6&gt;A&lt;/font&gt;&lt;FONT SIZE=7&gt;A&lt;/font&gt;&lt;FONT SIZE=6&gt;A&lt;/font&gt;
+
+&lt;FONT SIZE=5&gt;A&lt;/font&gt;&lt;FONT SIZE=4&gt;A&lt;/font&gt;&lt;FONT SIZE=3&gt;A&lt;/FONT&gt;
+</PRE>
+
+Dar&aacute; como resultado:
+<P>
+<FONT SIZE=3>A</font><FONT SIZE=4>A</font><FONT SIZE=5>A</font><FONT SIZE=6>A</font><FONT SIZE=7>A</font><FONT SIZE=6>A</font><FONT SIZE=5>A</font><FONT SIZE=4>A</font><FONT SIZE=3>A</FONT>
+<P>
+Se puede cambiar el tama&ntilde;o por defecto (3) de toda la p&aacute;gina con el elemento <B>&lt;BASEFONT SIZE</B>=valor&gt;. El texto tomar&aacute; el tama&ntilde;o indicado por <B>valor</B> y lo mantendr&aacute; hasta que aparezca otro elemento &lt;BASEFONT SIZE=valor&gt; y lo restaure o lo cambie por otro diferente. Tanto si se ha establecido un valor base como si se utiliza el valor por defecto, los tama&ntilde;os tambi&eacute;n pueden indicarse de forma <b>relativa</b>, por lo que el valor puede ser positivo (+) o negativo (-) respecto al tama&ntilde;o base. Por ejemplo estos dos valores dan el mismo resultado: 
+
+<pre>
+&lt;FONT SIZE=<font color="red">5</font>&gt;ABcde&lt;/FONT&gt;
+&lt;FONT SIZE=<font color="red">+2</font>&gt;ABcde&lt;/FONT&gt;
+</PRE>
+
+<FONT SIZE=5>ABcde</FONT><BR>
+<FONT SIZE=+2>ABcde</FONT>
+<hr>
+
+Con la versi&oacute;n 3.0 de Netscape se ha implementado un nuevo atributo del elemento &lt;FONT&gt; que permite elegir tipos de letra entre los varios de que dispone por defecto Windows. Se trata del atributo <b>FACE</B>. Este atributo permite forzar el tipo de letra que el dise&ntilde;ador de la p&aacute;gina quiere que vea el cliente, sin importar el que por defecto tenga establecido el visualizador.
+<P>
+Si escribes
+<PRE>
+&LT;FONT <B>FACE</B>=&quot;arial&quot;&GT;Texto de prueba 12345 con tipo ARIAL&lt;/FONT&gt;
+&LT;FONT FACE=&quot;times new roman&quot;&gt;Texto de prueba 12345 con tipo TIMES NEW ROMAN&lt;/FONT&gt;
+&LT;FONT FACE=&quot;courier new&quot;&gt;Texto de prueba 12345 con tipo COURIER NEW&lt;/FONT&gt;
+&LT;FONT FACE=&quot;courier&quot;&gt;Texto de prueba 12345 con tipo COURIER&lt;/FONT&gt;
+&LT;FONT FACE=&quot;roman&quot;&gt;Texto de prueba 12345 con tipo ROMAN&lt;/FONT&gt;
+&LT;FONT FACE=&quot;small fonts&quot;&gt;Texto de prueba 12345 con tipo SMALL FONTS&lt;/FONT&gt;
+
+</PRE>
+
+Se ver&aacute;:
+<P>
+<font face="arial">Texto de prueba 12345 con tipo ARIAL</font><br>
+<font face="times new roman">Texto de prueba 12345 con tipo TIMES NEW ROMAN</font><br>
+<font face="courier new">Texto de prueba 12345 con tipo COURIER NEW</font><br>
+<font face="courier">Texto de prueba 12345 con tipo COURIER</font><br>
+<font face="roman">Texto de prueba 12345 con tipo ROMAN</font><br>
+<font face="verdana">Texto de prueba 12345 con tipo VERDANA</font><br>
+<font face="small fonts">Texto de prueba 12345 con tipo SMALL FONTS</font><br>
+
+<P>
+Por supuesto, este atributo es compatible con todos los dem&aacute;s ya conocidos, como color y tama&ntilde;o. Por ejemplo, si escribes
+<pre>
+&lt;FONT FACE=&quot;impact&quot; SIZE=6 COLOR=&quot;red&quot;&gt;
+ Texto de prueba 12345 con tipo IMPACT&lt;/FONT&gt;
+</pre>
+
+Se ver&aacute;:
+<P>
+
+<font face="IMPACT" size=6 color="red">Texto de prueba 12345 con tipo IMPACT</font>
+<P>
+Se pueden hacer todas la combinaciones que se quieran, pero hay que tener presente que si en la m&aacute;quina cliente no est&aacute; instalada una determinada fuente, &eacute;sta no se ver&aacute; y en su lugar aparecer&aacute; la fuente por defecto del visualizador. No es interesante por tanto, definir tipos raros, que probablemente, no llegar&aacute;n a verse nunca. 
+<p>
+Si a pesar de todo, se define un tipo del que se tienen dudas de que exista en el cliente, se pueden indicar otros tipos alternativos, de forma que el navegador si no tiene el primer tipo, utilizar&aacute; el siguiente, y si tampoco lo tiene el pr&oacute;ximo, etc. As&iacute;:
+
+<pre>
+&lt;FONT FACE=&quot;raro, courier&quot; SIZE=4 COLOR=&quot;red&quot;&gt;
+ Texto de prueba 12345 con tipos alternativos&lt;/FONT&gt;
+</pre>
+
+Se ver&aacute;:
+<P>
+
+<font face="raro, courier" size=4 color="red">Texto de prueba 12345 con tipos alternativos</font>
+<P>
+Como puedes ver, se ha declarado como primer tipo de letra el llamado "raro" que, por supuesto, no existe, y el navegador pasa a utilizar el siguiente, "courier", que s&iacute; es habitual.
+<HR>
+<center>
+<h3>
+[<a href="indice.htm">Indice</a>]
+
+</h3>
+</center>
+<hr>
+
+</BODY>
+</HTML>

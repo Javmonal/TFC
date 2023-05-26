@@ -1,0 +1,32 @@
+<HTML>
+<HEAD><TITLE>Tamanos y tipos de letra</TITLE>
+</HEAD>
+
+<BODY>
+
+<center>
+<h3>
+[<a href="indice.htm">Indice</a>]
+</h3>
+</center>
+<hr>
+<H2>Nuevo producto</H2>
+
+Para definir un nuevo producto utilizaremos esta ventana, la cual nos proporciona todo lo necesario para realizarlo.
+<P>
+    
+<H2>Pasos a seguir</H2>
+
+Pulsar sobre el botón de nuevo producto en la ventana principal, una vez pulsado aparecerá la ventana de añadir un producto, rellenar los campos con los datos que se consideren y posteriormente pulsar el botón de añadir producto.
+    
+<P>
+<center>
+<h3>
+[<a href="indice.htm">Indice</a>]
+
+</h3>
+</center>
+<hr>
+
+</BODY>
+</HTML>
